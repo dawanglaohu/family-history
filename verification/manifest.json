@@ -1,0 +1,702 @@
+{
+  "version": 1,
+  "source": "D:\\family-history\\verification\\scans",
+  "generated_at": "2026-11-19T16:53:43.405329+00:00",
+  "count": 30,
+  "with_exif": 10,
+  "needs_inference": 20,
+  "photos": [
+    {
+      "id": "sha256:0e90dd0658f951823e8156771d72be82a705ed48c7c46a9a66de158fb8f5e63f",
+      "path": "1998/xmas/photo_00.jpg",
+      "hash": "0e90dd0658f951823e8156771d72be82a705ed48c7c46a9a66de158fb8f5e63f",
+      "exif_date": "1998-12-25T10:00:00",
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": false,
+      "scene_id": "scene_d178",
+      "person_ids": [],
+      "inferred_order": 0,
+      "confidence": 1.0,
+      "order_source": "exif_anchor"
+    },
+    {
+      "id": "sha256:a8901e50ba9bab301ea5cf8357d288fa1727bb19ed2c410352d1bcdf00a94786",
+      "path": "1998/xmas/photo_01.jpg",
+      "hash": "a8901e50ba9bab301ea5cf8357d288fa1727bb19ed2c410352d1bcdf00a94786",
+      "exif_date": "1998-12-25T10:01:00",
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": false,
+      "scene_id": "scene_d178",
+      "person_ids": [],
+      "inferred_order": 1,
+      "confidence": 1.0,
+      "order_source": "exif_anchor"
+    },
+    {
+      "id": "sha256:51a718e591255a4b26cf4498ab7b85081202caade264b0cd7554d3a22181d640",
+      "path": "1998/xmas/photo_02.jpg",
+      "hash": "51a718e591255a4b26cf4498ab7b85081202caade264b0cd7554d3a22181d640",
+      "exif_date": "1998-12-25T10:02:00",
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": false,
+      "scene_id": "scene_d178",
+      "person_ids": [],
+      "inferred_order": 2,
+      "confidence": 1.0,
+      "order_source": "exif_anchor"
+    },
+    {
+      "id": "sha256:53058c737b2fc5e5e2f5fa4a1c07f2a51d3b18d83436ec8c196c9d35f88c7acf",
+      "path": "1998/xmas/photo_03.jpg",
+      "hash": "53058c737b2fc5e5e2f5fa4a1c07f2a51d3b18d83436ec8c196c9d35f88c7acf",
+      "exif_date": "1998-12-25T10:03:00",
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": false,
+      "scene_id": "scene_d178",
+      "person_ids": [],
+      "inferred_order": 13,
+      "confidence": 1.0,
+      "order_source": "exif_anchor"
+    },
+    {
+      "id": "sha256:90f2e56a27633840aafcd9bee53b3656f2a804598d5dbf4077237166200e0917",
+      "path": "1998/xmas/photo_04.jpg",
+      "hash": "90f2e56a27633840aafcd9bee53b3656f2a804598d5dbf4077237166200e0917",
+      "exif_date": "1998-12-25T10:04:00",
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": false,
+      "scene_id": "scene_d178",
+      "person_ids": [],
+      "inferred_order": 24,
+      "confidence": 1.0,
+      "order_source": "exif_anchor"
+    },
+    {
+      "id": "sha256:2badbcec4da698bc8fd9f3e9b36b0fbbae1606b6d861d33eaf3ea09ea4b9e875",
+      "path": "1998/xmas/photo_05.jpg",
+      "hash": "2badbcec4da698bc8fd9f3e9b36b0fbbae1606b6d861d33eaf3ea09ea4b9e875",
+      "exif_date": "1998-12-25T10:05:00",
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": false,
+      "scene_id": "scene_d178",
+      "person_ids": [],
+      "inferred_order": 25,
+      "confidence": 1.0,
+      "order_source": "exif_anchor"
+    },
+    {
+      "id": "sha256:c785043b53adf0550e4e1a7c06abdc3d11fc738bd5719fe7479b8f9fb5fcd0c8",
+      "path": "1998/xmas/photo_06.jpg",
+      "hash": "c785043b53adf0550e4e1a7c06abdc3d11fc738bd5719fe7479b8f9fb5fcd0c8",
+      "exif_date": "1998-12-25T10:06:00",
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": false,
+      "scene_id": "scene_d178",
+      "person_ids": [],
+      "inferred_order": 26,
+      "confidence": 1.0,
+      "order_source": "exif_anchor"
+    },
+    {
+      "id": "sha256:e9cc127819e32af508a3ef193631f99eaee55b0baaf65ad4f5e208fdf3c4da26",
+      "path": "1998/xmas/photo_07.jpg",
+      "hash": "e9cc127819e32af508a3ef193631f99eaee55b0baaf65ad4f5e208fdf3c4da26",
+      "exif_date": "1998-12-25T10:07:00",
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": false,
+      "scene_id": "scene_d178",
+      "person_ids": [],
+      "inferred_order": 27,
+      "confidence": 1.0,
+      "order_source": "exif_anchor"
+    },
+    {
+      "id": "sha256:24d2853687941c47d70ae11c15c36aa2bd3a714e5c88563e6f18258301d68d9b",
+      "path": "1998/xmas/photo_08.jpg",
+      "hash": "24d2853687941c47d70ae11c15c36aa2bd3a714e5c88563e6f18258301d68d9b",
+      "exif_date": "1998-12-25T10:08:00",
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": false,
+      "scene_id": "scene_d178",
+      "person_ids": [],
+      "inferred_order": 28,
+      "confidence": 1.0,
+      "order_source": "exif_anchor"
+    },
+    {
+      "id": "sha256:4bc687d539f7a8320b917b8b9d1bc6b39491451be1e1516c3a4c56caefe18c3e",
+      "path": "1998/xmas/photo_09.jpg",
+      "hash": "4bc687d539f7a8320b917b8b9d1bc6b39491451be1e1516c3a4c56caefe18c3e",
+      "exif_date": "1998-12-25T10:09:00",
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": false,
+      "scene_id": "scene_d178",
+      "person_ids": [],
+      "inferred_order": 29,
+      "confidence": 1.0,
+      "order_source": "exif_anchor"
+    },
+    {
+      "id": "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "path": "2003/summer/photo_00.jpg",
+      "hash": "adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_35fe",
+      "person_ids": [],
+      "inferred_order": 3,
+      "confidence": 0.8,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "path": "2003/summer/photo_01.jpg",
+      "hash": "adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_35fe",
+      "person_ids": [],
+      "inferred_order": 4,
+      "confidence": 0.8,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "path": "2003/summer/photo_02.jpg",
+      "hash": "adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_35fe",
+      "person_ids": [],
+      "inferred_order": 5,
+      "confidence": 0.8,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "path": "2003/summer/photo_03.jpg",
+      "hash": "adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_35fe",
+      "person_ids": [],
+      "inferred_order": 6,
+      "confidence": 0.8,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "path": "2003/summer/photo_04.jpg",
+      "hash": "adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_35fe",
+      "person_ids": [],
+      "inferred_order": 7,
+      "confidence": 0.8,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "path": "2003/summer/photo_05.jpg",
+      "hash": "adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_35fe",
+      "person_ids": [],
+      "inferred_order": 8,
+      "confidence": 0.8,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "path": "2003/summer/photo_06.jpg",
+      "hash": "adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_35fe",
+      "person_ids": [],
+      "inferred_order": 9,
+      "confidence": 0.8,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "path": "2003/summer/photo_07.jpg",
+      "hash": "adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_35fe",
+      "person_ids": [],
+      "inferred_order": 10,
+      "confidence": 0.8,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "path": "2003/summer/photo_08.jpg",
+      "hash": "adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_35fe",
+      "person_ids": [],
+      "inferred_order": 11,
+      "confidence": 0.8,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "path": "2003/summer/photo_09.jpg",
+      "hash": "adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_35fe",
+      "person_ids": [],
+      "inferred_order": 12,
+      "confidence": 0.8,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "path": "2011/reunion/photo_00.jpg",
+      "hash": "8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_b2d0",
+      "person_ids": [],
+      "inferred_order": 14,
+      "confidence": 0.65,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "path": "2011/reunion/photo_01.jpg",
+      "hash": "8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_b2d0",
+      "person_ids": [],
+      "inferred_order": 15,
+      "confidence": 0.65,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "path": "2011/reunion/photo_02.jpg",
+      "hash": "8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_b2d0",
+      "person_ids": [],
+      "inferred_order": 16,
+      "confidence": 0.65,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "path": "2011/reunion/photo_03.jpg",
+      "hash": "8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_b2d0",
+      "person_ids": [],
+      "inferred_order": 17,
+      "confidence": 0.65,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "path": "2011/reunion/photo_04.jpg",
+      "hash": "8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_b2d0",
+      "person_ids": [],
+      "inferred_order": 18,
+      "confidence": 0.65,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "path": "2011/reunion/photo_05.jpg",
+      "hash": "8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_b2d0",
+      "person_ids": [],
+      "inferred_order": 19,
+      "confidence": 0.65,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "path": "2011/reunion/photo_06.jpg",
+      "hash": "8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_b2d0",
+      "person_ids": [],
+      "inferred_order": 20,
+      "confidence": 0.65,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "path": "2011/reunion/photo_07.jpg",
+      "hash": "8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_b2d0",
+      "person_ids": [],
+      "inferred_order": 21,
+      "confidence": 0.65,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "path": "2011/reunion/photo_08.jpg",
+      "hash": "8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_b2d0",
+      "person_ids": [],
+      "inferred_order": 22,
+      "confidence": 0.65,
+      "order_source": "inferred"
+    },
+    {
+      "id": "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "path": "2011/reunion/photo_09.jpg",
+      "hash": "8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "exif_date": null,
+      "dimensions": [
+        64,
+        48
+      ],
+      "needs_inference": true,
+      "scene_id": "scene_b2d0",
+      "person_ids": [],
+      "inferred_order": 23,
+      "confidence": 0.65,
+      "order_source": "inferred"
+    }
+  ],
+  "scenes": {
+    "scene_d178": [
+      "sha256:0e90dd0658f951823e8156771d72be82a705ed48c7c46a9a66de158fb8f5e63f",
+      "sha256:a8901e50ba9bab301ea5cf8357d288fa1727bb19ed2c410352d1bcdf00a94786",
+      "sha256:51a718e591255a4b26cf4498ab7b85081202caade264b0cd7554d3a22181d640",
+      "sha256:53058c737b2fc5e5e2f5fa4a1c07f2a51d3b18d83436ec8c196c9d35f88c7acf",
+      "sha256:90f2e56a27633840aafcd9bee53b3656f2a804598d5dbf4077237166200e0917",
+      "sha256:2badbcec4da698bc8fd9f3e9b36b0fbbae1606b6d861d33eaf3ea09ea4b9e875",
+      "sha256:c785043b53adf0550e4e1a7c06abdc3d11fc738bd5719fe7479b8f9fb5fcd0c8",
+      "sha256:e9cc127819e32af508a3ef193631f99eaee55b0baaf65ad4f5e208fdf3c4da26",
+      "sha256:24d2853687941c47d70ae11c15c36aa2bd3a714e5c88563e6f18258301d68d9b",
+      "sha256:4bc687d539f7a8320b917b8b9d1bc6b39491451be1e1516c3a4c56caefe18c3e"
+    ],
+    "scene_35fe": [
+      "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+      "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1"
+    ],
+    "scene_b2d0": [
+      "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+      "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b"
+    ]
+  },
+  "chronology": {
+    "anchors": 10,
+    "inferred": 20
+  },
+  "stories": {
+    "scene_d178": {
+      "title": "Scene d178",
+      "story": "A set of photos from scene_d178 in winter holidays. Scenes include photo 00 in 1998, photo 01 in 1998, photo 02 in 1998. The stories behind them matter more than the dates.",
+      "captions": [
+        "photo 00 in 1998",
+        "photo 01 in 1998",
+        "photo 02 in 1998",
+        "photo 03 in 1998",
+        "photo 04 in 1998",
+        "photo 05 in 1998",
+        "photo 06 in 1998",
+        "photo 07 in 1998",
+        "photo 08 in 1998",
+        "photo 09 in 1998"
+      ],
+      "confidence": 1.0
+    },
+    "scene_35fe": {
+      "title": "Scene 35fe",
+      "story": "A set of photos from scene_35fe. Scenes include photo 00 in 2003, photo 01 in 2003, photo 02 in 2003. The stories behind them matter more than the dates.",
+      "captions": [
+        "photo 00 in 2003",
+        "photo 01 in 2003",
+        "photo 02 in 2003",
+        "photo 03 in 2003",
+        "photo 04 in 2003",
+        "photo 05 in 2003",
+        "photo 06 in 2003",
+        "photo 07 in 2003",
+        "photo 08 in 2003",
+        "photo 09 in 2003"
+      ],
+      "confidence": 0.8
+    },
+    "scene_b2d0": {
+      "title": "Scene b2d0",
+      "story": "A set of photos from scene_b2d0. Scenes include photo 00 in 2011, photo 01 in 2011, photo 02 in 2011. The stories behind them matter more than the dates.",
+      "captions": [
+        "photo 00 in 2011",
+        "photo 01 in 2011",
+        "photo 02 in 2011",
+        "photo 03 in 2011",
+        "photo 04 in 2011",
+        "photo 05 in 2011",
+        "photo 06 in 2011",
+        "photo 07 in 2011",
+        "photo 08 in 2011",
+        "photo 09 in 2011"
+      ],
+      "confidence": 0.65
+    }
+  },
+  "pin_request": {
+    "question": "Can you pin these events? (just confirm or correct)",
+    "events": [
+      {
+        "scene_id": "scene_b2d0",
+        "suggested": "A set of photos from scene_b2d0. Scenes include photo 00 in 2011, photo 01 in 2011, photo 02 in 2011. The stories behind them matter more than the dates.",
+        "confidence": 0.65
+      }
+    ]
+  },
+  "tree": {
+    "nodes": [
+      {
+        "id": "scene_d178",
+        "type": "sceneNode",
+        "data": {
+          "title": "Scene d178",
+          "story": "A set of photos from scene_d178 in winter holidays. Scenes include photo 00 in 1998, photo 01 in 1998, photo 02 in 1998. The stories behind them matter more than the dates.",
+          "photo_refs": [
+            "sha256:0e90dd0658f951823e8156771d72be82a705ed48c7c46a9a66de158fb8f5e63f",
+            "sha256:a8901e50ba9bab301ea5cf8357d288fa1727bb19ed2c410352d1bcdf00a94786",
+            "sha256:51a718e591255a4b26cf4498ab7b85081202caade264b0cd7554d3a22181d640",
+            "sha256:53058c737b2fc5e5e2f5fa4a1c07f2a51d3b18d83436ec8c196c9d35f88c7acf",
+            "sha256:90f2e56a27633840aafcd9bee53b3656f2a804598d5dbf4077237166200e0917",
+            "sha256:2badbcec4da698bc8fd9f3e9b36b0fbbae1606b6d861d33eaf3ea09ea4b9e875",
+            "sha256:c785043b53adf0550e4e1a7c06abdc3d11fc738bd5719fe7479b8f9fb5fcd0c8",
+            "sha256:e9cc127819e32af508a3ef193631f99eaee55b0baaf65ad4f5e208fdf3c4da26",
+            "sha256:24d2853687941c47d70ae11c15c36aa2bd3a714e5c88563e6f18258301d68d9b",
+            "sha256:4bc687d539f7a8320b917b8b9d1bc6b39491451be1e1516c3a4c56caefe18c3e"
+          ],
+          "confidence": 1.0,
+          "pin_request": null
+        },
+        "position": {
+          "x": 80,
+          "y": 80
+        }
+      },
+      {
+        "id": "scene_35fe",
+        "type": "sceneNode",
+        "data": {
+          "title": "Scene 35fe",
+          "story": "A set of photos from scene_35fe. Scenes include photo 00 in 2003, photo 01 in 2003, photo 02 in 2003. The stories behind them matter more than the dates.",
+          "photo_refs": [
+            "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+            "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+            "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+            "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+            "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+            "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+            "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+            "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+            "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1",
+            "sha256:adffbf457b5bd4c69530e97838e5ebceab24c908161a314971b46318928ddec1"
+          ],
+          "confidence": 0.8,
+          "pin_request": null
+        },
+        "position": {
+          "x": 400,
+          "y": 220
+        }
+      },
+      {
+        "id": "scene_b2d0",
+        "type": "sceneNode",
+        "data": {
+          "title": "Scene b2d0",
+          "story": "A set of photos from scene_b2d0. Scenes include photo 00 in 2011, photo 01 in 2011, photo 02 in 2011. The stories behind them matter more than the dates.",
+          "photo_refs": [
+            "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+            "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+            "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+            "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+            "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+            "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+            "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+            "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+            "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b",
+            "sha256:8e7a43e7e2e2256d950f77e865da55c48c547d85338c62c763eb47f6c59a6b7b"
+          ],
+          "confidence": 0.65,
+          "pin_request": {
+            "question": "Can you pin these events? (just confirm or correct)",
+            "events": [
+              {
+                "scene_id": "scene_b2d0",
+                "suggested": "A set of photos from scene_b2d0. Scenes include photo 00 in 2011, photo 01 in 2011, photo 02 in 2011. The stories behind them matter more than the dates.",
+                "confidence": 0.65
+              }
+            ]
+          }
+        },
+        "position": {
+          "x": 720,
+          "y": 80
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e_scene_d178_scene_35fe",
+        "source": "scene_d178",
+        "target": "scene_35fe",
+        "type": "temporal",
+        "animated": false
+      },
+      {
+        "id": "e_scene_35fe_scene_b2d0",
+        "source": "scene_35fe",
+        "target": "scene_b2d0",
+        "type": "temporal",
+        "animated": false
+      }
+    ]
+  }
+}

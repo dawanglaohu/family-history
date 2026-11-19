@@ -1,8 +1,9 @@
-"""Run the ingest -> cluster -> chronology pipeline in one shot.
+"""Run the full pipeline (Steps 1-5) in one shot.
 
     python src/pipeline.py examples/scans -o data/manifest.json
 
-Each step is independently runnable too (ingest.py, cluster.py, chronology.py).
+Step 6 (verify.py) builds a synthetic sample and runs this end-to-end.
+Each step is independently runnable too.
 """
 
 from __future__ import annotations
@@ -15,12 +16,16 @@ from pathlib import Path
 from ingest import ingest_folder
 from cluster import cluster_photos
 from chronology import order_photos
+from story import generate_stories
+from tree import build_tree
 
 
 def run(scans_dir: Path) -> dict:
     manifest = ingest_folder(scans_dir)
     cluster_photos(manifest)
     order_photos(manifest)
+    generate_stories(manifest)
+    build_tree(manifest)
     return manifest
 
 
@@ -43,7 +48,8 @@ def main(argv: list[str] | None = None) -> int:
         f"pipeline: {manifest['count']} photos, "
         f"{len(manifest.get('scenes', {}))} scenes, "
         f"{chrono.get('anchors', 0)} anchors, "
-        f"{chrono.get('inferred', 0)} inferred -> {args.output}"
+        f"{chrono.get('inferred', 0)} inferred, "
+        f"{len(manifest.get('tree', {}).get('nodes', []))} tree nodes -> {args.output}"
     )
     return 0
 

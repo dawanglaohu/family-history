@@ -5,16 +5,20 @@ fills in the gaps, and turns the result into an interactive family tree you can
 actually explore. Not a genealogy database — a living scrapbook that writes
 itself.
 
-This repo currently contains **Steps 1–3** of the pipeline: ingest, scene/person
-clustering, and chronology inference (the hard part — ordering EXIF-less
-photos). Story generation and the React Flow tree are planned in the roadmap
-below.
+The full pipeline (**Steps 1–6**) is implemented: ingest, scene/person
+clustering, chronology inference (the hard part — ordering EXIF-less photos),
+story generation, an interactive tree, and an end-to-end verification run.
 
 Run the whole thing in one shot:
 
 ```bash
 python src/pipeline.py examples/scans -o data/manifest.json
+python src/verify.py --out verification --count 30   # Step 6 acceptance test
 ```
+
+The committed `verification/` directory is the output of that last command:
+30 synthetic photos, 3 scenes, 10 EXIF anchors + 20 inferred placements, a
+batched pin request, and `tree.svg` — the acceptance test from the roadmap.
 
 ## Why this exists
 
@@ -28,11 +32,15 @@ the stories and the vibe, not census records.
 
 ```
 src/ingest.py       # Step 1: scan folder -> data/manifest.json
-src/cluster.py      # Step 2: CLIP-style embeddings -> scenes, face -> person_ids
+src/cluster.py      # Step 2: perceptual embeddings -> scenes, face -> person_ids
 src/chronology.py   # Step 3: EXIF anchors + 4 signals -> inferred_order + confidence
-src/pipeline.py     # runs Steps 1-3 end-to-end
-tests/              # 12 stdlib unittest cases
+src/story.py        # Step 4: captions + 2-3 sentence stories + batched pin_request
+src/tree.py         # Step 5: React Flow nodes/edges (temporal + family links)
+src/verify.py       # Step 6: synthetic 30 photos -> end-to-end run + tree.svg
+src/pipeline.py     # runs Steps 1-5 end-to-end
+tests/              # 18 stdlib unittest cases
 examples/scans/     # sample photo folder (synthetic stand-ins)
+verification/       # committed Step 6 acceptance run
 data/               # generated manifests (git-ignored except .gitkeep)
 ```
 
@@ -103,13 +111,14 @@ python -m unittest discover -s tests -v
   signals — face-age progression, film-stock color/grain batch signature,
   seasonal/decor cues, and OCR-style dates — produces `inferred_order` plus a
   confidence strictly below the anchors.
-- **Step 4 — Story**: caption clusters with a vision-language model, write
-  2–3 sentence stories, and batch low-confidence clusters into a *single*
-  "pin these events" question to the user — never 200 prompts.
-- **Step 5 — Tree**: React Flow renders clusters as nodes and temporal/family
-  links as edges; click a node to expand its photos and story.
-- **Step 6 — Verify**: generate a synthetic 30-photo sample folder, run the
-  pipeline end-to-end, and commit a README with screenshots.
+- **Step 4 — Story** (done): caption clusters (VLM swap point), write 2–3
+  sentence stories, and batch low-confidence clusters into a *single*
+  "pin these events" question (max 3 events) — never 200 prompts.
+- **Step 5 — Tree** (done): React Flow compatible nodes (exact schema:
+  `title`/`story`/`photo_refs`/`confidence`/`pin_request` + `position`) and
+  temporal/family edges; `tree.svg` renders a preview.
+- **Step 6 — Verify** (done): generates a synthetic 30-photo folder, runs the
+  pipeline end-to-end, and commits the README + SVG — see `verification/`.
 
 ## License
 

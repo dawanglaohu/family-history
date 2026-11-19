@@ -23,7 +23,7 @@ from PIL import Image
 
 from ingest import IMAGE_SUFFIXES
 
-SCENE_SIMILARITY_THRESHOLD = 0.86
+SCENE_SIMILARITY_THRESHOLD = 0.95
 
 
 def _path_root(path: str) -> str:
@@ -37,16 +37,20 @@ def image_embedding(path: str, grid: int = 4) -> np.ndarray:
     Production swap point: replace with ``clip_model.encode(image)``. The
     returned vector only needs to be a 1-D float array; similar scenes should
     have a high cosine similarity.
+
+    Colour is centred before normalising so that two images with the same
+    colour cast but different brightness still land close together, while
+    different colour casts separate. This makes the default embedding useful
+    without a model; a CLIP vector drops in unchanged.
     """
     with Image.open(path) as image:
         image = image.convert("RGB").resize((grid, grid))
         pixels = np.asarray(image, dtype=np.float32) / 255.0
-    # 3 channels of mean colour + flattened luminance grid
     mean_rgb = pixels.reshape(-1, 3).mean(axis=0)
-    luminance = pixels.mean(axis=2).reshape(-1)
-    vector = np.concatenate([mean_rgb, luminance])
-    norm = np.linalg.norm(vector)
-    return vector / norm if norm else vector
+    # Centre around neutral grey so colour *cast* dominates, not brightness.
+    centred = mean_rgb - mean_rgb.mean()
+    norm = np.linalg.norm(centred)
+    return (centred / norm).astype(np.float32) if norm > 1e-6 else np.zeros(3, dtype=np.float32)
 
 
 def face_embeddings(path: str) -> list[np.ndarray]:
