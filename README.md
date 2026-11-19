@@ -5,9 +5,16 @@ fills in the gaps, and turns the result into an interactive family tree you can
 actually explore. Not a genealogy database — a living scrapbook that writes
 itself.
 
-This repo currently contains **Step 1 (ingest)** of the pipeline. Later steps
-(clustering, chronology inference, story generation, and the React Flow tree)
-are planned in the roadmap below.
+This repo currently contains **Steps 1–3** of the pipeline: ingest, scene/person
+clustering, and chronology inference (the hard part — ordering EXIF-less
+photos). Story generation and the React Flow tree are planned in the roadmap
+below.
+
+Run the whole thing in one shot:
+
+```bash
+python src/pipeline.py examples/scans -o data/manifest.json
+```
 
 ## Why this exists
 
@@ -20,11 +27,29 @@ the stories and the vibe, not census records.
 ## Layout
 
 ```
-src/ingest.py          # Step 1: scan folder -> data/manifest.json
-tests/test_ingest.py   # stdlib unittest suite
-examples/scans/        # sample photo folder (synthetic stand-ins)
-data/                  # generated manifests (git-ignored except .gitkeep)
+src/ingest.py       # Step 1: scan folder -> data/manifest.json
+src/cluster.py      # Step 2: CLIP-style embeddings -> scenes, face -> person_ids
+src/chronology.py   # Step 3: EXIF anchors + 4 signals -> inferred_order + confidence
+src/pipeline.py     # runs Steps 1-3 end-to-end
+tests/              # 12 stdlib unittest cases
+examples/scans/     # sample photo folder (synthetic stand-ins)
+data/               # generated manifests (git-ignored except .gitkeep)
 ```
+
+### Swapping in real models
+
+The clustering and chronology modules are fully implemented and runnable
+offline with dependency-free perceptual features. Each has an explicit
+production swap point:
+
+- `cluster.image_embedding` — replace with a real CLIP encoder.
+- `cluster.face_embeddings` — wire in insightface / face-recognition; the
+  `person_ids` grouping and face-age chronology signal then activate.
+- `chronology.ocr_date_hint` — replace filename/sidecar text with pytesseract
+  output from postcards and clippings.
+- `chronology.face_age_hint` — replace the face-size proxy with an age model.
+
+The optimisation, anchor pinning, and confidence logic do not change.
 
 ## Running Step 1
 
@@ -70,13 +95,14 @@ python -m unittest discover -s tests -v
 
 - **Step 1 — Ingest** (done): walk `/scans`, pull EXIF `DateTimeOriginal`,
   SHA-256 each file, emit `manifest.json`, flag EXIF-less photos.
-- **Step 2 — Cluster**: CLIP image embeddings + HDBSCAN for scenes; face
-  detection/embeddings for recurring `person_ids`.
-- **Step 3 — Chronology (the hard part)**: EXIF-dated photos become anchors.
-  For the rest, build a partial order from face-age progression, film-stock
-  color/grain signatures per development batch, seasonal/decor cues, and OCR
-  dates on postcards/clippings; solve a global ordering respecting anchors and
-  output a confidence score per placement.
+- **Step 2 — Cluster** (done): cosine similarity + connected components over
+  perceptual embeddings for scenes; face embeddings (swap point) grouped into
+  `person_ids`. CLIP / HDBSCAN drop in without changing the grouping code.
+- **Step 3 — Chronology (the hard part)** (done): EXIF-dated photos become
+  hard anchors (confidence 1.0). For the rest, a weighted blend of four
+  signals — face-age progression, film-stock color/grain batch signature,
+  seasonal/decor cues, and OCR-style dates — produces `inferred_order` plus a
+  confidence strictly below the anchors.
 - **Step 4 — Story**: caption clusters with a vision-language model, write
   2–3 sentence stories, and batch low-confidence clusters into a *single*
   "pin these events" question to the user — never 200 prompts.
